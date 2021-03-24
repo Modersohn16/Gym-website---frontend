@@ -12,13 +12,14 @@ function GymList() {
        'Accept': 'application/json',
        "Access-Control-Allow-Origin": "*"}  
    };
-/*    useEffect(() => {
+    useEffect(() => {
        fetch(GetGymUrl, Init).then(response => response.json())
        .then(data => setGyms(data));
-   }, [GetGymUrl]) */
+   }, [GetGymUrl]) 
   
   
-//    if(Gyms != null){
+if(Gyms != null)
+{
        return (
            <>
            <div><h1>OUR GYMS</h1></div>
@@ -33,8 +34,8 @@ function GymList() {
       <td>EMAIL</td>
       <td>PHONE NUMBER</td>
     </tr>
-{/* 
-{Gyms.map(gym => 
+{ 
+Gyms.map(gym => 
             <tr>
             <td><span>{gym.name}</span></td>
             <td><span>{gym.streetAdress}<br/></span>
@@ -44,7 +45,8 @@ function GymList() {
             <td><span>{gym.operationalHours}</span></td>
             <td><span>{gym.email}</span></td>
             <td><span>{gym.phoneNumber}</span></td>
-            </tr>)} */}
+            </tr>)
+} 
 
 
         <tr>
@@ -129,7 +131,7 @@ function GymList() {
     </div>
            </>
            );
- //  }
+   }
 
    return <p></p>;
 
